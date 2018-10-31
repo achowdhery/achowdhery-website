@@ -80,6 +80,27 @@
 	generate predictions every few hours on this <a href="http://35.229.111.190:8000/home/">website</a> for five Delhi locations 
 	as the pollution and they showcase their project in this <a href="https://youtu.be/l7-dK4eKxG0">youtube video</a>.</p>
 	
+	 <script src="https://www.youtube.com/iframe_api"></script>
+   <script type="text/javascript">
+      function onYouTubeIframeAPIReady() {
+        var ctrlq = document.getElementById("youtube-player");
+        var player = new YT.Player('youtube-player', {
+          height: ctrlq.dataset.height,
+          width: ctrlq.dataset.width,
+          events: {
+            'onReady': function(e) {
+              e.target.mute();
+              e.target.cueVideoById({ 
+                videoId: ctrlq.dataset.video,
+                startSeconds: ctrlq.dataset.startseconds,
+                endSeconds: ctrlq.dataset.endseconds
+              });
+            }
+          } 
+        }); 
+      } 
+    </script>
+    
 	<div data-video = "Smbb32Bcrf4"  
          data-height = "200" 
          data-width = "240" 
@@ -102,7 +123,27 @@
 	learning model works accurately and deploying this machine learning model on the smartphone 
 	with Tensorflow Lite to enable a low-latency real-time prediction experience. 
 	This <a href="https://youtu.be/Smbb32Bcrf4">youtube video</a> provides a sample of the application that the team will launch by the end of year. </p>
-	
+	 <script src="https://www.youtube.com/iframe_api"></script>
+   <script type="text/javascript">
+      function onYouTubeIframeAPIReady() {
+        var ctrlq = document.getElementById("youtube-player");
+        var player = new YT.Player('youtube-player', {
+          height: ctrlq.dataset.height,
+          width: ctrlq.dataset.width,
+          events: {
+            'onReady': function(e) {
+              e.target.mute();
+              e.target.cueVideoById({ 
+                videoId: ctrlq.dataset.video,
+                startSeconds: ctrlq.dataset.startseconds,
+                endSeconds: ctrlq.dataset.endseconds
+              });
+            }
+          } 
+        }); 
+      } 
+    </script>
+    
  <div data-video = "YszzB753P5U"  
          data-height = "200" 
          data-width = "240" 
