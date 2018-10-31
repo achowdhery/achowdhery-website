@@ -5,9 +5,32 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Celestini Program India 2017-2018</title>
+
+<title>Celestini Program India 2017-2019</title>
 </head>
 <body>
+	 <script src="https://www.youtube.com/iframe_api"></script>
+   <script type="text/javascript">
+      function onYouTubeIframeAPIReady() {
+        var ctrlq = document.getElementById("youtube-player");
+        var player = new YT.Player('youtube-player', {
+          height: ctrlq.dataset.height,
+          width: ctrlq.dataset.width,
+          events: {
+            'onReady': function(e) {
+              e.target.mute();
+              e.target.cueVideoById({ 
+                videoId: ctrlq.dataset.video,
+                startSeconds: ctrlq.dataset.startseconds,
+                endSeconds: ctrlq.dataset.endseconds
+              });
+            }
+          } 
+        }); 
+      } 
+    </script>
+    
+	
 <div id="layout-content">
 <div id="toptitle">
 <h1>Celestini Program India 2017-2019</h1>
@@ -27,14 +50,20 @@
 	Another team designed an Android app that uses a user-uploaded photosky to estimate the air pollution level. 
 	And the third team prototyped a low-latency platform to transmit vehicle-to-vehicle alerts about potential 
 	road safety hazards/collisions using Xbee radios.</p>
-
+	<div style=”float:left;margin:0 10px 5px 0;”>
+   <div data-video = "l7-dK4eKxG0"  
+         data-height = "200" 
+         data-width = "240" 
+         id = "youtube-player">
+    </div>
 	<p><b> Air Pollution:</b>Preserving the air quality is a critical challenge in the industrial and urban areas of many emerging economies. 
 	According to the World Health Organisation (WHO) global air pollution database released in Geneva, 
 	India has 14 out of the 15 most polluted cities in the world in terms of PM 2.5 
 	concentrations. One potential solution is to increase awareness of the problem by 
 	enabling users to understand and track the level of air pollution, as well as to receive 
 	forecasts for the next day along with information about the potential sources of pollution. 
-	This could provide the basis for taking effective pollution control measures. 
+		This could provide the basis for taking effective pollution control measures. </p>
+	</div>
 		
 <p>One of the student teams worked on designing a temporal forecasting solution to predict the 
 	real-time and fine-grained air quality information in five locations of Delhi, 
