@@ -37,8 +37,11 @@
 </div>
 <p>If you would like to solve an important social problem while working with the latest technology and learning from incredible mentors, we have a program for you. You can win cash prizes and meet technical pioneers in the internet and communications. This program, called <a href="http://marconiyoungscholars.org/project/celestini/"> Celestini Program </a>, has caught the interest of undergrads from both India and Uganda </p>
 
-<p> Our competition goal will be to solve an important socio-economic problem 
-	using data analytics on a network of sensors. Our program focuses on using machine learning and data analytics on a network of IoT or mobile devices to solve important socio-economic problems (such as road safety, air pollution, water quality) where the data collected from sensors, such as video cameras, air/water quality sensors, is used in real-time to make inferences, update models, and generate alerts. We solicit student teams to participate in this two-phase program led by <a href="http://www.achowdhery.com">Dr. Aakanksha Chowdhery</a> (Google AI and 2012 Marconi Society Young Scholar) and <a href="http://ee.iitd.ernet.in/people/brijeshlall.html">Prof. Brejesh Lall</a> (IIT Delhi) as directors. </p>
+<p> Our competition goal focuses on solving an important socio-economic problem (such as road safety, air pollution, water quality) 
+	using machine learning and data analytics on a network of IoT or mobile devices 
+	where the data is collected from sensors, such as video cameras, air/water quality sensors, 
+	and used in real-time to make inferences, update models, and generate alerts. 
+	We solicit student teams to participate in this program led by <a href="http://www.achowdhery.com">Dr. Aakanksha Chowdhery</a> (Google AI and 2012 Marconi Society Young Scholar) and <a href="http://ee.iitd.ernet.in/people/brijeshlall.html">Prof. Brejesh Lall</a> (IIT Delhi) as directors. </p>
 
 <p>The <a href="http://marconisociety.org/">Marconi Society</a> is a foundation dedicated to benefiting mankind through scientific achievements in the internet and communications.  Each year, we recognize a group of inspirational graduate researchers with the Young Scholar award.</p>
 <p>Our Young Scholars are passionate about working with students in developing countries to help solve important social problems.  This work, called the <a href="http://marconisociety.org/ys-celestini-project/">Celestini Program</a>, has successfully improved the health of pregnant women in Uganda and expanded to India in 2017 in partnership with IIT Delhi.</p>
@@ -46,84 +49,120 @@
 	<h2>Brief summary of 2018 competition</h2>
 <p> More than one hundred students expressed interest in working on the program during the  summer and three student teams (comprising of eight students) were selected. 
 	They chose problem statements related to air pollution and road safety in New Delhi were selected. 
-	One team prototyped a website that forecasts air pollution levels in Delhi over the next 24 hours. 
-	Another team designed an Android app that uses a user-uploaded photosky to estimate the air pollution level. 
-	And the third team prototyped a low-latency platform to transmit vehicle-to-vehicle alerts about potential 
-	road safety hazards/collisions using Xbee radios.</p>
+</p>
 
-   <div data-video = "l7-dK4eKxG0"  
-         data-height = "200" 
-         data-width = "240" 
-         id = "youtube-player">
-    </div>    
-		  
 	<p><b> Air Pollution:</b>Preserving the air quality is a critical challenge in the industrial and urban areas of many emerging economies. 
 	According to the World Health Organisation (WHO) global air pollution database released in Geneva, 
 	India has 14 out of the 15 most polluted cities in the world in terms of PM 2.5 
 	concentrations. One potential solution is to increase awareness of the problem by 
-	enabling users to understand and track the level of air pollution, as well as to receive 
-	forecasts for the next day along with information about the potential sources of pollution. 
-		This could provide the basis for taking effective pollution control measures. </p>
+	enabling users to understand and track the level of air pollution, 
+		providing the basis for taking effective pollution control measures. </p>
+     
+		  
 
-<p>One of the student teams worked on designing a temporal forecasting solution to predict the 
-	real-time and fine-grained air quality information in five locations of Delhi, 
-	based on the historical data reported by Central Pollution Control board. 
-	The solution predicts the air quality over the next 24 hours of different air 
-	pollutants including sulphur dioxide (SO2), nitrogen dioxide (NOx), 
-	particulate matter (PM2.5 and PM10) for Delhi. It also tracks the 
-	seasonal variations of the major pollutants and the potential 
-	sources of pollution at different instants of time. The challenge in 
-	their project is to build accurate machine learning models that effectively adapt 
-	to the daily and seasonal variations of various pollutants. 
-	They develop an advanced machine learning model called CLair using LSTM techniques. 
-	The team deploy their solution approach on Google Cloud Platform to automatically 
-	generate predictions every few hours on this <a href="http://35.229.111.190:8000/home/">website</a> for five Delhi locations 
-	as the pollution and they showcase their project in this <a href="https://youtu.be/l7-dK4eKxG0">youtube video</a>.</p>
-	
-	<div data-video = "Smbb32Bcrf4"  
+
+<p>Clair: A student team developed a temporal forecasting solution based on the historical data reported by Central Pollution Control board
+	to predict the 
+	real-time and fine-grained air quality information in five locations of Delhi. 
+		<div data-video = "l7-dK4eKxG0"  
          data-height = "200" 
          data-width = "240" 
          id = "youtube-player">
-    </div>
+    </div>	
+<div class="row">
+  <div class="column">	<ul>Prototype:
+  <li>Air quality prediction of major air pollutants over the next 24 hours.</li>
+  <li>Tracks daily and 
+	seasonal variations of the major pollutants</li>
+  <li>Identify potential sources</li>
+</ul>
+<ul>Results:
+  <li> Developed an advanced machine learning model called CLair using LSTM techniques.</li>
+  <li>Deployed their solution on Google Cloud Platform to automatically 
+	generate predictions Tracks daily and 
+	seasonal variations of the major pollutants</li>
+  <li>Predictions updated every few hours on this <a href="http://35.229.111.190:8000/home/">website</a> for five Delhi locations 
+  </li>
+<li>Demo <a href="https://youtu.be/l7-dK4eKxG0">youtube video</a></li>
+</ul>
+</div>
+  <div class="column">   </div>
+</div>
+</p>
 	
-<p>Temporal forecasting can predict the air pollution levels in locations where 
+	 
+	
+<p>Air Cognizer: Another student team developed a temporal forecasting model to predict the air pollution levels in locations where 
 	the Delhi Government provides air quality data hourly, but this is limited to specific locations. 
 	A scalable approach requires crowdsourcing where we use inputs from the 
-	entire population and the easiest way to leverage crowdsourcing via smartphone applications 
-	widely used by Delhi residents.  
-	Toward this goal, one of the student teams developed an Android smartphone application called Air Cognizer. 
-	This applications allows users to upload an input image of the sky horizon taken from 
-	their smartphone camera. Based on the certain features of the sky, such as how blue it is, 
-	the app predicts air quality particulate matter indicator, PM2.5 concentration, with an error less than 5%. 
-	The application uses image processing with machine learning using Tensorflow Lite to 
-	generate estimates by combining a pre-training machine learning model with a model trained 
-	online for each location based on all the user-uploaded photos. Two key challenges that students 
-	solve are preprocessing the data collected from different smartphone cameras so that the machine 
-	learning model works accurately and deploying this machine learning model on the smartphone 
-	with Tensorflow Lite to enable a low-latency real-time prediction experience. 
-	This <a href="https://youtu.be/Smbb32Bcrf4">youtube video</a> provides a sample of the application that the team will launch by the end of year. </p>
-	
- <div data-video = "YszzB753P5U"  
+	entire population via smartphone applications 
+	widely used by Delhi residents.
+		<div data-video = "Smbb32Bcrf4"  
          data-height = "200" 
          data-width = "240" 
          id = "youtube-player">
     </div>
+	<div class="row">
+  <div class="column">	<ul>Prototype:
+  <li>Android smartphone application allows users to upload an input image of the sky horizon taken from 
+	their smartphone camera..</li>
+  <li>The app predicts air quality particulate matter indicator, PM2.5 concentration, with an error less than 5% based 
+	  on the certain features of the sky, such as how blue it is. </li>
+</ul>
+<ul>Results:
+  <li> Developed a machine learning model with image preprocessing using Tensorflow Lite to 
+	generate estimates by combining a pre-training machine learning model with a model trained 
+	online for each location based on a.</li>
+  <li> Image data preprocessed collected from different smartphone cameras so that the machine 
+	learning model works accurately</li>
+  <li> Deployed on the smartphone 
+	with Tensorflow Lite to enable a low-latency real-time prediction experience
+  </li>
+<li>Demo <a href="https://youtu.be/Smbb32Bcrf4">youtube video</a> provides a sample of the application that the team will launch by the end of year. </p>
+	</li>
+</ul>
+</div>
+  <div class="column">   </div>
+</div>
+</p>
 	
-	<p><b>Road Safety:</b> Another challenging problem that the student teams worked on was road safety. 
+	<p><b>Vehicle-to-vehicle communication for road Safety:</b> Another challenging problem that the student teams worked on was road safety. 
 	Over 200,000 people in India lost their lives in road accidents in 2015. 
-	Traffic accidents are the top cause of death for people aged 19-25. 
-	In Delhi, many of these accidents are caused by buses hitting pedestrians and cyclists. 
-	This year, a student team worked on prototype solution that allows multiple vehicles to talk to one another 
+	Traffic accidents are the top cause of death for people aged 19-25 and often such traffic accidents involve
+		multiple vehicles at high speed. This year, a student team worked on prototype solution that allows multiple vehicles to talk to one another 
 		at low latencies (tens of milliseconds) to send real time alerts about possible impending collisions to 
-		drivers behind them to prevent chain-reaction car accidents. This system leverages computer vision to 
-		classify a given scenario as one that may result in collision. Then the system uses vehicle to vehicle 
-		communications to broadcast alerts. Each vehicle, acting as a node, broadcasts information related to its speed, 
+		drivers behind them to prevent chain-reaction car accidents.
+		 <div data-video = "YszzB753P5U"  
+         data-height = "200" 
+         data-width = "240" 
+         id = "youtube-player">
+    </div>
+	<div class="row">
+  <div class="column">	<ul>Prototype:
+  <li> System leverages computer vision to 
+		classify a given scenario as one that may result in collision.</li>
+  <li> Vehicle to vehicle 
+		communications to broadcast alerts. </li>
+</ul>
+<ul>Results:
+  <li> Each vehicle, acting as a node, broadcasts information related to its speed, 
 		location etc. and the other nodes receive and process this information based on the degree of relevance that 
-		the message holds. The solution approach was designed over Xbee radios as a low-latency solution (~30-40ms) 
-		available off-the shelf at low cost. This <a href="https://youtu.be/YszzB753P5U">video</a> and 
+		the message holds.
+	  
+	  Developed a machine learning model with image preprocessing using Tensorflow Lite to 
+	generate estimates by combining a pre-training machine learning model with a model trained 
+	online for each location based on a.</li>
+  <li> The solution approach was designed over Xbee radios as a low-latency solution (~30-40ms) 
+		available off-the shelf at low cost. </li>
+  <li>  Demo <a href="https://youtu.be/YszzB753P5U">video</a> and 
 		<a href="https://sites.google.com/view/driverassistance">website link</a> showcases their work during the project.
 
-	
+  </li>
+</ul>
+</div>
+  <div class="column">   </div>
+</div>	
+
 	<p><b> 2018 Award Ceremony:</b> The concluding ceremony of this year will held on November 1 at IIT Delhi where 
  director of Marconi Society, Prof. Andrea Goldsmith (Stephen Harris Professor of Electrical Engineering, Stanford University), 
 		will give an inaugural address. The ceremony will be attended by the IIT Delhi Dean Alumni Affairs & 
