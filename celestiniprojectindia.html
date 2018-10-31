@@ -10,25 +10,7 @@
 </head>
 <body>
 	 <script src="https://www.youtube.com/iframe_api"></script>
-   <script type="text/javascript">
-      function onYouTubeIframeAPIReady() {
-        var ctrlq = document.getElementById("youtube-player");
-        var player = new YT.Player('youtube-player', {
-          height: ctrlq.dataset.height,
-          width: ctrlq.dataset.width,
-          events: {
-            'onReady': function(e) {
-              e.target.mute();
-              e.target.cueVideoById({ 
-                videoId: ctrlq.dataset.video,
-                startSeconds: ctrlq.dataset.startseconds,
-                endSeconds: ctrlq.dataset.endseconds
-              });
-            }
-          } 
-        }); 
-      } 
-    </script>
+  
     
 	
 <div id="layout-content">
@@ -70,6 +52,25 @@
          data-width = "240" 
          id = "youtube-player">
     </div>	
+	 <script type="text/javascript">
+      function onYouTubeIframeAPIReady() {
+        var ctrlq = document.getElementById("youtube-player");
+        var player = new YT.Player('youtube-player', {
+          height: ctrlq.dataset.height,
+          width: ctrlq.dataset.width,
+          events: {
+            'onReady': function(e) {
+              e.target.mute();
+              e.target.cueVideoById({ 
+                videoId: ctrlq.dataset.video,
+                startSeconds: ctrlq.dataset.startseconds,
+                endSeconds: ctrlq.dataset.endseconds
+              });
+            }
+          } 
+        }); 
+      } 
+    </script>
 <div class="row">
   <div class="column">	<ul>Prototype:
   <li>Air quality prediction of major air pollutants over the next 24 hours.</li>
@@ -98,6 +99,11 @@
 	A scalable approach requires crowdsourcing where we use inputs from the 
 	entire population via smartphone applications 
 	widely used by Delhi residents.
+		<div data-video = "Smbb32Bcrf4"  
+         data-height = "200" 
+         data-width = "240" 
+         id = "youtube-player1">
+    </div>
    <script type="text/javascript">
       function onYouTubeIframeAPIReady() {
         var ctrlq = document.getElementById("youtube-player1");
@@ -118,11 +124,7 @@
       } 
     </script>
     
-		<div data-video = "Smbb32Bcrf4"  
-         data-height = "200" 
-         data-width = "240" 
-         id = "youtube-player1">
-    </div>
+	
 	<div class="row">
   <div class="column">	<ul>Prototype:
   <li>Android smartphone application allows users to upload an input image of the sky horizon taken from 
@@ -153,6 +155,11 @@
 		multiple vehicles at high speed. This year, a student team worked on prototype solution that allows multiple vehicles to talk to one another 
 		at low latencies (tens of milliseconds) to send real time alerts about possible impending collisions to 
 		drivers behind them to prevent chain-reaction car accidents.
+				 <div data-video = "YszzB753P5U"  
+         data-height = "200" 
+         data-width = "240" 
+         id = "youtube-player2">
+    </div>
 	   <script type="text/javascript">
       function onYouTubeIframeAPIReady() {
         var ctrlq = document.getElementById("youtube-player2");
@@ -173,11 +180,7 @@
       } 
     </script>
     
-		 <div data-video = "YszzB753P5U"  
-         data-height = "200" 
-         data-width = "240" 
-         id = "youtube-player2">
-    </div>
+
 	<div class="row">
   <div class="column">	<ul>Prototype:
   <li> System leverages computer vision to 
