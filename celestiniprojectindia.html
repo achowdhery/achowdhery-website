@@ -65,7 +65,7 @@
          id = "youtube-player">
     </div>	
 
-<p>Approach of one team: Develop a temporal forecasting solution based on the historical data reported by Central Pollution Control board
+<p>Clair: Develop a temporal forecasting solution based on the historical data reported by Central Pollution Control board
 	to predict the 
 	real-time and fine-grained air quality information in five locations of Delhi. 
 <div class="row">
@@ -89,38 +89,36 @@
 </div>
 </p>
 	
-	 <script src="https://www.youtube.com/iframe_api"></script>
-   <script type="text/javascript">
-      function onYouTubeIframeAPIReady() {
-        var ctrlq = document.getElementById("youtube-player1");
-        var player = new YT.Player('youtube-player1', {
-          height: ctrlq.dataset.height,
-          width: ctrlq.dataset.width,
-          events: {
-            'onReady': function(e) {
-              e.target.mute();
-              e.target.cueVideoById({ 
-                videoId: ctrlq.dataset.video,
-                startSeconds: ctrlq.dataset.startseconds,
-                endSeconds: ctrlq.dataset.endseconds
-              });
-            }
-          } 
-        }); 
-      } 
-    </script>
-    
-	<div data-video = "Smbb32Bcrf4"  
-         data-height = "200" 
-         data-width = "240" 
-         id = "youtube-player1">
-    </div>
+	 
 	
-<p>Temporal forecasting can predict the air pollution levels in locations where 
+<p>Air Cognizer: Temporal forecasting can predict the air pollution levels in locations where 
 	the Delhi Government provides air quality data hourly, but this is limited to specific locations. 
 	A scalable approach requires crowdsourcing where we use inputs from the 
-	entire population and the easiest way to leverage crowdsourcing via smartphone applications 
-	widely used by Delhi residents.  
+	entire population via smartphone applications 
+	widely used by Delhi residents. 
+	<div class="row">
+  <div class="column">	<ul>
+  <li>Android smartphone application allows users to upload an input image of the sky horizon taken from 
+	their smartphone camera..</li>
+  <li>The app predicts air quality particulate matter indicator, PM2.5 concentration, with an error less than 5% based 
+	  on the certain features of the sky, such as how blue it is. </li>
+</ul>
+<ul>Results:
+  <li> Developed a machine learning model with image preprocessing using Tensorflow Lite to 
+	generate estimates by combining a pre-training machine learning model with a model trained 
+	online for each location based on a.</li>
+  <li> Image data preprocessed collected from different smartphone cameras so that the machine 
+	learning model works accurately</li>
+  <li> Deployed on the smartphone 
+	with Tensorflow Lite to enable a low-latency real-time prediction experience
+  </li>
+<li>Demo <a href="https://youtu.be/Smbb32Bcrf4">youtube video</a> provides a sample of the application that the team will launch by the end of year. </p>
+	</li>
+</ul>
+</div>
+  <div class="column">   </div>
+</div>
+</p>
 	Toward this goal, one of the student teams developed an Android smartphone application called Air Cognizer. 
 	This applications allows users to upload an input image of the sky horizon taken from 
 	their smartphone camera. Based on the certain features of the sky, such as how blue it is, 
@@ -132,32 +130,6 @@
 	learning model works accurately and deploying this machine learning model on the smartphone 
 	with Tensorflow Lite to enable a low-latency real-time prediction experience. 
 	This <a href="https://youtu.be/Smbb32Bcrf4">youtube video</a> provides a sample of the application that the team will launch by the end of year. </p>
-	 <script src="https://www.youtube.com/iframe_api"></script>
-   <script type="text/javascript">
-      function onYouTubeIframeAPIReady() {
-        var ctrlq = document.getElementById("youtube-player2");
-        var player = new YT.Player('youtube-player2', {
-          height: ctrlq.dataset.height,
-          width: ctrlq.dataset.width,
-          events: {
-            'onReady': function(e) {
-              e.target.mute();
-              e.target.cueVideoById({ 
-                videoId: ctrlq.dataset.video,
-                startSeconds: ctrlq.dataset.startseconds,
-                endSeconds: ctrlq.dataset.endseconds
-              });
-            }
-          } 
-        }); 
-      } 
-    </script>
-    
- <div data-video = "YszzB753P5U"  
-         data-height = "200" 
-         data-width = "240" 
-         id = "youtube-player2">
-    </div>
 	
 	<p><b>Road Safety:</b> Another challenging problem that the student teams worked on was road safety. 
 	Over 200,000 people in India lost their lives in road accidents in 2015. 
