@@ -99,32 +99,26 @@
 	A scalable approach requires crowdsourcing where we use inputs from the 
 	entire population via smartphone applications 
 	widely used by Delhi residents.
-		<div data-video = "Smbb32Bcrf4"  
-         data-height = "200" 
-         data-width = "240" 
-         id = "youtube-player1">
-    </div>
-   <script type="text/javascript">
-      function onYouTubeIframeAPIReady() {
-        var ctrlq = document.getElementById("youtube-player1");
-        var player = new YT.Player('youtube-player1', {
-          height: ctrlq.dataset.height,
-          width: ctrlq.dataset.width,
-          events: {
-            'onReady': function(e) {
-              e.target.mute();
-              e.target.cueVideoById({ 
-                videoId: ctrlq.dataset.video,
-                startSeconds: ctrlq.dataset.startseconds,
-                endSeconds: ctrlq.dataset.endseconds
-              });
-            }
-          } 
-        }); 
-      } 
-    </script>
-    
-	
+	<div id="ytplayer1"></div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer1', {
+      height: '200',
+      width: '240',
+      videoId: 'Smbb32Bcrf4'
+    });
+  }
+</script>
 	<div class="row">
   <div class="column">	<ul>Prototype:
   <li>Android smartphone application allows users to upload an input image of the sky horizon taken from 
