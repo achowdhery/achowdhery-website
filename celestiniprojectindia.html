@@ -119,33 +119,39 @@
   <div class="column">   </div>
 </div>
 </p>
-	Toward this goal, one of the student teams developed an Android smartphone application called Air Cognizer. 
-	This applications allows users to upload an input image of the sky horizon taken from 
-	their smartphone camera. Based on the certain features of the sky, such as how blue it is, 
-	the app predicts air quality particulate matter indicator, PM2.5 concentration, with an error less than 5%. 
-	The application uses image processing with machine learning using Tensorflow Lite to 
-	generate estimates by combining a pre-training machine learning model with a model trained 
-	online for each location based on all the user-uploaded photos. Two key challenges that students 
-	solve are preprocessing the data collected from different smartphone cameras so that the machine 
-	learning model works accurately and deploying this machine learning model on the smartphone 
-	with Tensorflow Lite to enable a low-latency real-time prediction experience. 
-	This <a href="https://youtu.be/Smbb32Bcrf4">youtube video</a> provides a sample of the application that the team will launch by the end of year. </p>
 	
-	<p><b>Road Safety:</b> Another challenging problem that the student teams worked on was road safety. 
+	<p><b>Vehicle-to-vehicle communication for road Safety:</b> Another challenging problem that the student teams worked on was road safety. 
 	Over 200,000 people in India lost their lives in road accidents in 2015. 
-	Traffic accidents are the top cause of death for people aged 19-25. 
-	In Delhi, many of these accidents are caused by buses hitting pedestrians and cyclists. 
-	This year, a student team worked on prototype solution that allows multiple vehicles to talk to one another 
+	Traffic accidents are the top cause of death for people aged 19-25 and often such traffic accidents involve
+		multiple vehicles at high speed. This year, a student team worked on prototype solution that allows multiple vehicles to talk to one another 
 		at low latencies (tens of milliseconds) to send real time alerts about possible impending collisions to 
-		drivers behind them to prevent chain-reaction car accidents. This system leverages computer vision to 
-		classify a given scenario as one that may result in collision. Then the system uses vehicle to vehicle 
-		communications to broadcast alerts. Each vehicle, acting as a node, broadcasts information related to its speed, 
+		drivers behind them to prevent chain-reaction car accidents.
+	<div class="row">
+  <div class="column">	<ul>
+  <li> System leverages computer vision to 
+		classify a given scenario as one that may result in collision.</li>
+  <li> Vehicle to vehicle 
+		communications to broadcast alerts. </li>
+</ul>
+<ul>Results:
+  <li> Each vehicle, acting as a node, broadcasts information related to its speed, 
 		location etc. and the other nodes receive and process this information based on the degree of relevance that 
-		the message holds. The solution approach was designed over Xbee radios as a low-latency solution (~30-40ms) 
-		available off-the shelf at low cost. This <a href="https://youtu.be/YszzB753P5U">video</a> and 
+		the message holds.
+	  
+	  Developed a machine learning model with image preprocessing using Tensorflow Lite to 
+	generate estimates by combining a pre-training machine learning model with a model trained 
+	online for each location based on a.</li>
+  <li> The solution approach was designed over Xbee radios as a low-latency solution (~30-40ms) 
+		available off-the shelf at low cost. </li>
+  <li>  Demo <a href="https://youtu.be/YszzB753P5U">video</a> and 
 		<a href="https://sites.google.com/view/driverassistance">website link</a> showcases their work during the project.
 
-	
+  </li>
+</ul>
+</div>
+  <div class="column">   </div>
+</div>	
+
 	<p><b> 2018 Award Ceremony:</b> The concluding ceremony of this year will held on November 1 at IIT Delhi where 
  director of Marconi Society, Prof. Andrea Goldsmith (Stephen Harris Professor of Electrical Engineering, Stanford University), 
 		will give an inaugural address. The ceremony will be attended by the IIT Delhi Dean Alumni Affairs & 
