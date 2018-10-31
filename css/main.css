@@ -365,3 +365,11 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
