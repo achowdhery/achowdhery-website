@@ -27,7 +27,82 @@
 	Another team designed an Android app that uses a user-uploaded photosky to estimate the air pollution level. 
 	And the third team prototyped a low-latency platform to transmit vehicle-to-vehicle alerts about potential 
 	road safety hazards/collisions using Xbee radios.</p>
+<div class="player" style="width: 480px;height:360px;max-width: 50%;margin: 0 auto;">
+    <div id="youtube" style="width: 100%;height: 100%"></div>
+    <div class="controls" style="text-align: center;margin: 0 auto;">
+        <button style="padding: 10px;width: 100px;background-color: #167AC6;"
+                onclick="YouTubePlayer.playPrevious()">Prev
+        </button>
+        <button style="padding: 10px;width: 100px;background-color: #167AC6;margin-left: 30px;"
+                onclick="YouTubePlayer.playNext()">Next
+        </button>
+    </div>
+</div>
+<script src="//www.youtube.com/iframe_api"></script>
+<script>
+    var YouTubePlayer = {
+        current: 0,
+        player: null,
+        /**
+         * Tracks ids here...
+         */
+        videos: [
+            'vQMnaDNw5FQ',
+            'Dp6lbdoprZ0',
+            'OulN7vTDq1I'
+        ],
+        currentlyPlaying:function(){
+            console.info('Current Track id', YouTubePlayer.videos[YouTubePlayer.current]);
+            return YouTubePlayer.videos[YouTubePlayer.current];
+        },
+        playNext: function () {
+            YouTubePlayer.increaseTrack()
+            if (YouTubePlayer.player) {
+                YouTubePlayer.currentlyPlaying();
+                YouTubePlayer.player.loadVideoById(YouTubePlayer.videos[YouTubePlayer.current]);
+            } else {
+                alert('Please Wait! Player is loading');
+            }
+        },
+        playPrevious: function () {
+            YouTubePlayer.decreaseTrack()
+            if (YouTubePlayer.player) {
+                YouTubePlayer.currentlyPlaying();
+                YouTubePlayer.player.loadVideoById(YouTubePlayer.videos[YouTubePlayer.current]);
+            } else {
+                alert('Please Wait! Player is loading');
+            }
 
+        },
+        increaseTrack: function () {
+            YouTubePlayer.current = YouTubePlayer.current + 1;
+            if (YouTubePlayer.current >= YouTubePlayer.videos.length) {
+                YouTubePlayer.current = 0;
+            }
+        },
+        decreaseTrack: function () {
+            YouTubePlayer.current = Math.max(YouTubePlayer.current - 1, 0);
+        },
+        onReady: function (event) {
+            event.target.loadVideoById(YouTubePlayer.videos[YouTubePlayer.current]);
+        },
+        onStateChange: function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+                YouTubePlayer.playNext();
+            }
+        }
+    }
+    function onYouTubeIframeAPIReady() {
+        YouTubePlayer.player = new YT.Player('youtube', {
+            height: '350',
+            width: '425',
+            events: {
+                'onReady': YouTubePlayer.onReady,
+                'onStateChange': YouTubePlayer.onStateChange
+            }
+        });
+    }
+</script>
 	<p><b> Air Pollution:</b>Preserving the air quality is a critical challenge in the industrial and urban areas of many emerging economies. 
 	According to the World Health Organisation (WHO) global air pollution database released in Geneva, 
 	India has 14 out of the 15 most polluted cities in the world in terms of PM 2.5 
