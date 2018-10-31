@@ -18,6 +18,7 @@
           width: ctrlq.dataset.width,
           events: {
             'onReady': function(e) {
+              e.target.mute();
               e.target.cueVideoById({ 
                 videoId: ctrlq.dataset.video,
                 startSeconds: ctrlq.dataset.startseconds,
@@ -52,7 +53,7 @@
 	 <div data-video = "l7-dK4eKxG0"  
          data-startseconds = "100"         
          data-endseconds = "200"    
-         data-height = "180" 
+         data-height = "100" 
          data-width = "240" 
          id = "youtube-player">
     </div> 
